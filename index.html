@@ -42,11 +42,16 @@
               </a>
             </li>
             <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="uil uil-graduation-cap nav__icon"></i>
+                Educación
+              </a>
+            </li>
+            <li class="nav__item">
               <a href="#portfolio" class="nav__link">
                 <i class="uil uil-scenery nav__icon"></i> Portafolio
               </a>
             </li>
-            <li class="nav__item"></li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
                 <i class="uil uil-message nav__icon"></i> Contacto
@@ -117,10 +122,10 @@
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Hola. Soy David</h1>
+              <h1 class="home__title">Hi. I'am Alexa</h1>
               <p class="home__description">Desarrollador web | Full-Stack</p>
               <a href="#contact" class="button button--flex">
-                Enviar Email
+                Contactar
                 <i class="uil uil-message nav__icon button__icon"></i>
               </a>
             </div>
@@ -291,24 +296,20 @@
       </section>
 
       <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section">
+      <section class="qualification section" id="education">
         <h2 class="section__title">Educación</h2>
         <span class="section__subtitle"></span>
 
         <div class="qualification__container container">
           <div class="qualification__tabs">
-            <div class="qualification__button" data-target="#education">
+            <div class="qualification__button">
               <i class="uil uil-graduation-cap qualification__icon"></i>
             </div>
           </div>
 
           <div class="qualification__sections">
             <!--==================== QUALIFICATION CONTENT 1 ====================-->
-            <div
-              class="qualification__content qualification__active"
-              data-content
-              id="education"
-            >
+            <div class="qualification__content qualification__active">
               <!--==================== QUALIFICATION 1 ====================-->
               <div class="qualification__data">
                 <div>
@@ -316,6 +317,9 @@
                     Ingenieria en Ciencias de la Computación
                   </h3>
                   <span class="qualification__subtitle">USFXCH - Bolivia</span>
+                  <span class="qualification__subtitle"
+                    >Graduación con Excelencia Académica</span
+                  >
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
                     2015 - 2021
@@ -438,15 +442,14 @@
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contacto</h2>
-        <span class="section__subtitle"></span>
 
-        <div class="contact__container container grid">
+        <div class="contact__container">
           <div class="contact__informations">
             <div class="contact__information">
               <i class="uil uil-phone contact__icon"></i>
 
               <div>
-                <h3 class="contact__title">Llamame Me</h3>
+                <h3 class="contact__title">Teléfono</h3>
                 <span class="contact__subtitle">+591 72874083</span>
               </div>
             </div>
@@ -470,15 +473,15 @@
                 >
               </div>
             </div>
-            <div class="contact__button">
-              <a
-                href="mailto:davidthbsossa@gmail.com"
-                class="contact__button-btn"
-              >
-                Enviarme un Mesaje
-                <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
+          </div>
+          <div class="contact__button">
+            <a
+              href="mailto:davidthbsossa@gmail.com"
+              class="contact__button-btn"
+            >
+              Enviar Mesaje
+              <i class="uil uil-message button__icon"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -498,7 +501,7 @@
               <a href="#portfolio" class="footer__link">Portfolio</a>
             </li>
             <li>
-              <a href="#contact" class="footer__link">Contactme</a>
+              <a href="#contact" class="footer__link">Contacto</a>
             </li>
           </ul>
 
