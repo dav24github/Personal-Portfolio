@@ -28,36 +28,66 @@
           <ul class="nav__list grid">
             <li class="nav__item">
               <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i> Inicio
+                <i class="uil uil-estate nav__icon"></i> <span>Inicio</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> Acerca de
+                <i class="uil uil-user nav__icon"></i> <span>Acerca de</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i> Habilidades
+                <i class="uil uil-file-alt nav__icon"></i>
+                <span>Habilidades</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#education" class="nav__link">
                 <i class="uil uil-graduation-cap nav__icon"></i>
-                Educación
+                <span>Educación</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Portafolio
+                <i class="uil uil-scenery nav__icon"></i>
+                <span>Portafolio</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contacto
+                <i class="uil uil-message nav__icon"></i> <span>Contacto</span>
               </a>
             </li>
+            <li class="nav__item nav__link" id="nav-menu-lang">
+              <i class="uil uil-globe"></i>
+              <div class="nav__link-lang" id="nav-menu-langItems">
+                <a
+                  href="#"
+                  language="spanish"
+                  class="nav__lang"
+                  onclick="myFunction(event)"
+                >
+                  es
+                </a>
+                <div></div>
+                <a
+                  href="#"
+                  language="english"
+                  class="nav__lang"
+                  onclick="myFunction(event)"
+                >
+                  en
+                </a>
+              </div>
+            </li>
           </ul>
+          <a language="spanish" class="nav__es" onclick="myFunction(event)"
+            >es</a
+          >
+          <a language="english" class="nav__en" onclick="myFunction(event)"
+            >en</a
+          >
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
 
@@ -93,32 +123,53 @@
             </div>
 
             <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M44.9,-78.3C58.2,-70.1,69.1,-58.1,77.6,-44.5C86.1,-30.8,92.1,-15.4,91.7,-0.2C91.3,15,84.5,29.9,76.4,44.1C68.2,58.4,58.7,71.8,45.8,80.3C32.8,88.8,16.4,92.3,0.9,90.8C-14.7,89.3,-29.4,82.8,-43.6,75C-57.8,67.3,-71.6,58.3,-80,45.6C-88.4,32.9,-91.4,16.4,-90.7,0.4C-90.1,-15.7,-85.9,-31.4,-78.2,-45.3C-70.5,-59.2,-59.3,-71.3,-45.7,-79.5C-32.1,-87.6,-16.1,-91.7,-0.1,-91.5C15.8,-91.3,31.5,-86.6,44.9,-78.3Z"
-                    transform="translate(100 100)"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M44.9,-78.3C58.2,-70.1,69.1,-58.1,77.6,-44.5C86.1,-30.8,92.1,-15.4,91.7,-0.2C91.3,15,84.5,29.9,76.4,44.1C68.2,58.4,58.7,71.8,45.8,80.3C32.8,88.8,16.4,92.3,0.9,90.8C-14.7,89.3,-29.4,82.8,-43.6,75C-57.8,67.3,-71.6,58.3,-80,45.6C-88.4,32.9,-91.4,16.4,-90.7,0.4C-90.1,-15.7,-85.9,-31.4,-78.2,-45.3C-70.5,-59.2,-59.3,-71.3,-45.7,-79.5C-32.1,-87.6,-16.1,-91.7,-0.1,-91.5C15.8,-91.3,31.5,-86.6,44.9,-78.3Z"
-                    transform="translate(100 100)"
-                  />
+              <div class="home__blob">
+                <svg
+                  viewBox="0 0 500 500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="100%"
+                  id="blobSvg"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="0%"
+                      y2="100%"
+                    >
+                      <stop
+                        offset="0%"
+                        style="stop-color: rgb(142, 96, 211)"
+                      ></stop>
+                      <stop
+                        offset="100%"
+                        style="stop-color: rgb(14, 173, 198)"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
 
+                  <path fill="url(#gradient)">
+                    <animate
+                      attributeName="d"
+                      dur="8000ms"
+                      repeatCount="indefinite"
+                      values="M418.5,336Q387,422,295,439.5Q203,457,132.5,399Q62,341,55,247Q48,153,127,105.5Q206,58,294,71.5Q382,85,416,167.5Q450,250,418.5,336Z;
+                      M425,322Q364,394,281.5,434.5Q199,475,128.5,408.5Q58,342,66.5,254Q75,166,136.5,94.5Q198,23,282,64Q366,105,426,177.5Q486,250,425,322Z;
+                      M420.5,321.5Q364,393,286,413Q208,433,145.5,381.5Q83,330,75,246Q67,162,137.5,114Q208,66,298.5,71Q389,76,433,163Q477,250,420.5,321.5Z;
+                      M426.5,324.5Q369,399,285,431.5Q201,464,132,402Q63,340,76.5,256.5Q90,173,146,106.5Q202,40,284,72Q366,104,425,177Q484,250,426.5,324.5Z;
+                      M418.5,336Q387,422,295,439.5Q203,457,132.5,399Q62,341,55,247Q48,153,127,105.5Q206,58,294,71.5Q382,85,416,167.5Q450,250,418.5,336Z"
+                    ></animate>
+                  </path>
                   <image
                     class="home__blob-img"
-                    x="95"
-                    y="-10"
+                    x="170"
+                    y="160"
                     xlink:href="assets/img/perfil-1.1.png"
                   />
-                </g>
-              </svg>
+                </svg>
+              </div>
             </div>
 
             <div class="home__data">
@@ -143,7 +194,7 @@
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
-        <h2 class="section__title">Acerca de Mi</h2>
+        <h2 class="section__title">Acerca de mi</h2>
         <span class="section__subtitle">Perfil</span>
 
         <div class="about__container container grid">
@@ -268,7 +319,7 @@
               <i class="uil uil-swatchbook skills__icon"></i>
 
               <div>
-                <h1 class="skills__title">Otras Herramientas</h1>
+                <h1 class="skills__title other__skills">Otras Herramientas</h1>
               </div>
 
               <i class="uil uil-angle-down skills__arrow"></i>
@@ -314,9 +365,10 @@
               <div class="qualification__data">
                 <div>
                   <h3 class="qualification__title">
-                    Ingenieria en Ciencias de la Computación
+                    INGENIERÍA EN CIENCIAS DE LA COMPUTACIÓN
                   </h3>
                   <span class="qualification__subtitle">USFXCH - Bolivia</span>
+                  <br />
                   <span class="qualification__subtitle"
                     >Graduación con Excelencia Académica</span
                   >
@@ -362,7 +414,7 @@
                   </a>
                   <a href="#" class="portfolio__code">
                     <i class="uil uil-code-branch portfolio__icon"></i>
-                    <span class="portfolio__code-description">Ver Código</span>
+                    <span class="portfolio__code-description">Code</span>
                   </a>
                 </div>
               </div>
@@ -392,7 +444,7 @@
                   </a>
                   <a href="#" class="portfolio__code">
                     <i class="uil uil-code-branch portfolio__icon"></i>
-                    <span class="portfolio__code-description">Ver Código</span>
+                    <span class="portfolio__code-description">Code</span>
                   </a>
                 </div>
               </div>
@@ -422,7 +474,7 @@
                   </a>
                   <a href="#" class="portfolio__code">
                     <i class="uil uil-code-branch portfolio__icon"></i>
-                    <span class="portfolio__code-description">Ver Código</span>
+                    <span class="portfolio__code-description">Code</span>
                   </a>
                 </div>
               </div>
@@ -467,9 +519,9 @@
               <i class="uil uil-map-marker contact__icon"></i>
 
               <div>
-                <h3 class="contact__title">Location</h3>
+                <h3 class="contact__title">Ubicación</h3>
                 <span class="contact__subtitle"
-                  >Sucre - Bolivia C. B. de las Casas #158</span
+                  >Sucre - Bolivia | C. B. de las Casas #158</span
                 >
               </div>
             </div>
@@ -477,7 +529,7 @@
           <div class="contact__button">
             <a
               href="mailto:davidthbsossa@gmail.com"
-              class="contact__button-btn"
+              class="button contact__button-btn"
             >
               Enviar Mesaje
               <i class="uil uil-message button__icon"></i>
@@ -489,16 +541,17 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+      <div class="footer__line"></div>
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
             <h1 class="footer__title">David Escalante</h1>
-            <span class="footer__subtitle">Desarrollador Web</span>
+            <span class="footer__subtitle">Desarrollador Web | Full-Stack</span>
           </div>
 
           <ul class="footer__links">
             <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
+              <a href="#portfolio" class="footer__link">Portafolio</a>
             </li>
             <li>
               <a href="#contact" class="footer__link">Contacto</a>
@@ -546,5 +599,6 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    <script src="db.js"></script>
   </body>
 </html>
