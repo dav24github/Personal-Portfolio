@@ -367,11 +367,39 @@ img {
 .home__blob {
   width: 200px;
   fill: var(--first-color);
+  filter: blur(0.5px);
 }
 
 .home__blob-img {
   opacity: 0.7;
   width: 30%;
+  filter: blur(0.5px);
+  animation-name: blob-img;
+  animation-duration: 12s;
+  transform-origin: center;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blob-img {
+  0% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
+  20% {
+    transform: translate(-6px, 7px) rotate(-4deg);
+  }
+  40% {
+    transform: translate(0px, 0px) rotate(7deg);
+  }
+  60% {
+    transform: translate(10px, 16px) rotate(-6deg);
+  }
+  80% {
+    transform: translate(0px, -5px) rotate(-3deg);
+  }
+  100% {
+    transform: translate(5px, -5px) rotate(5deg);
+  }
 }
 
 .home__data {
