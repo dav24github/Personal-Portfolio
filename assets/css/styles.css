@@ -762,7 +762,6 @@ img {
   border-radius: 0.5rem;
 }
 .contact__information {
-  display: flex;
   margin-bottom: var(--mb-2);
 }
 
@@ -1010,8 +1009,7 @@ img {
   }
   .contact__informations {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr;
     justify-content: space-between;
   }
   .contact__information {

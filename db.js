@@ -18,7 +18,7 @@ var data = {
       about__title: "About Me",
       section__subtitle: "My introduction",
       about__description:
-        "I am a software developer with a Bachelor of Computer Science degree  focused mainly on web development (Full-Stack). Looking for new opportunities and highly motivated to learn fast and improve my skills in a team environment.",
+        "I am a software developer with a Bachelor of Computer Science Engineering degree  focused mainly on web development (Full-Stack). Looking for new opportunities and highly motivated to learn fast and improve my skills in a team environment.",
       about__button: "Download CV",
     },
     skills: {
@@ -52,7 +52,7 @@ var data = {
     },
     home: {
       home_title: "Hola, soy David",
-      home__description: "Desarrollador web | Full-Stack",
+      home__description: "Desarrollador Web | Full-Stack",
       btn_contactme: "Contactar",
       home__scroll: "Has click",
     },
