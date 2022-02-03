@@ -758,6 +758,7 @@ img {
 }
 
 .contact__informations {
+  text-align: center;
   padding: 2rem;
   border-radius: 0.5rem;
 }
@@ -1009,7 +1010,8 @@ img {
   }
   .contact__informations {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
     justify-content: space-between;
   }
   .contact__information {
