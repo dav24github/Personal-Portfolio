@@ -199,17 +199,16 @@ img {
   align-items: center;
   color: var(--title-color);
   font-weight: var(--font-medium);
-  font-size: 0.7rem;
- 
+  font-size: 0.4rem;
 }
 
-.nav__logo:hover{
+.nav__logo:hover {
   color: var(--first-color);
 }
 
 .nav__logo img {
-  width: 45px;
-  /* margin-right: 0.25rem; */
+  width: 25px;
+  margin-right: 0.08rem;
 }
 
 .nav__toggle {
@@ -1237,6 +1236,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .nav__logo {
+    font-size: 0.7rem;
+   
+  }
+  .nav__logo img {
+    width: 40px;
+    margin-right: 0.2rem;
+  }
+  
   .container {
     margin-left: auto;
     margin-right: auto;
