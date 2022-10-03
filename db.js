@@ -30,6 +30,9 @@ var data = {
       qualification__subtitle_2:
         "UMRPSFXCH | Sucre, Bolivia <br> Graduation with Honors (GPA: 81,37)",
       qualification__calendar_2: "July 2021",
+      qualification__title_3: "DIPLOMA IN TEACHING FOR HIGHER EDUCATION V. 13",
+      qualification__subtitle_3: "UMRPSFXCH | Sucre, Bolivia",
+      qualification__calendar_3: "October 2022",
     },
     skills: {
       skills__title: "Skills",
@@ -43,7 +46,7 @@ var data = {
       services__button:
         'View More <i class="uil uil-arrow-right button__icon"></i>',
       services__modal_title_1: "Web Design",
-      services__modal_title_2: "Web Applications",
+      services__modal_title_2: "Web Applications +",
       services__modal_title_3: "Tech Support",
       services__modal_1: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>
@@ -63,17 +66,21 @@ var data = {
       </p>`,
       services__modal_5: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>        
-        I program what you have in mind.
+        Android mobile applications.
       </p>`,
       services__modal_6: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>        
-        Website maintenance and updating.
+        I program what you have in mind.
       </p>`,
       services__modal_7: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>        
-        WordPress implementation. Installation and configuration, data upload. Training.
+        Website maintenance and updating.
       </p>`,
       services__modal_8: `<i class="uil uil-check-circle services__modal-icon"></i>
+      <p>        
+        WordPress implementation. Installation and configuration, data upload. Training.
+      </p>`,
+      services__modal_9: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>           
         If you have any questions or need to hire a hosting for your website and you don't know how to do it, come to me.
       </p>`,
@@ -119,6 +126,10 @@ var data = {
       qualification__subtitle_2:
         "UMRPSFXCH | Sucre, Bolivia <br> Titulación por Excelencia Académica (R.A: 81,37)",
       qualification__calendar_2: "Julio 2021",
+      qualification__title_2:
+        "DIPLOMADO EN DOCENCIA PARA EDUCACIÓN SUPERIOR V. 13",
+      qualification__subtitle_2: "UMRPSFXCH | Sucre, Bolivia",
+      qualification__calendar_2: "Cursando actualmente",
     },
     skills: {
       skills__title: "Habilidades",
@@ -132,7 +143,7 @@ var data = {
       services__button:
         'Ver Más <i class="uil uil-arrow-right button__icon"></i>',
       services__modal_title_1: "Diseño Web",
-      services__modal_title_2: "Aplicaciones Web",
+      services__modal_title_2: "Aplicaciones Web +",
       services__modal_title_2: "Soporte Técnico",
       services__modal_1: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>       
@@ -152,17 +163,21 @@ var data = {
       </p>`,
       services__modal_5: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>                
-        Programo lo que tengas en mente.
+        Aplicaciones móviles para Android. 
       </p>`,
       services__modal_6: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>                
-        Mantenimiento y actualización de sitios web.
+        Programo lo que tengas en mente.
       </p>`,
       services__modal_7: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>                
-        Implementación de WordPress. Instalación y configuración, carga de datos. Capacitación.
+        Mantenimiento y actualización de sitios web.
       </p>`,
       services__modal_8: `<i class="uil uil-check-circle services__modal-icon"></i>
+      <p>                
+        Implementación de WordPress. Instalación y configuración, carga de datos. Capacitación.
+      </p>`,
+      services__modal_9: `<i class="uil uil-check-circle services__modal-icon"></i>
       <p>                
         Si tienes alguna duda o necesitas contratar un hosting para tu web y no sabes cómo hacerlo acude a mi.
       </p>`,
