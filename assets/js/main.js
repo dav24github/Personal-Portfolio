@@ -50,13 +50,15 @@ function myFunction(event) {
   const home = document.querySelector("a[href='#home'] span");
   const about = document.querySelector("a[href='#about'] span");
   const skills = document.querySelector("a[href='#skills'] span");
-  const education = document.querySelector("a[href='#education'] span");
+  const services = document.querySelector("a[href='#services'] span");
   const portfolio = document.querySelector("a[href='#portfolio'] span");
   const contact = document.querySelector("a[href='#contact'] span");
+  console.log(attr);
+  console.log(data[attr]);
   home.textContent = data[attr].nav.home;
   about.textContent = data[attr].nav.about;
   skills.textContent = data[attr].nav.skills;
-  education.textContent = data[attr].nav.education;
+  services.textContent = data[attr].nav.services;
   portfolio.textContent = data[attr].nav.portfolio;
   contact.textContent = data[attr].nav.contact;
 
@@ -74,15 +76,67 @@ function myFunction(event) {
 
   //About
   const about__title = document.querySelector(".about .section__title");
-  const about__subtitle = document.querySelector(".about .section__subtitle");
   const about__description = document.querySelector(
     ".about .about__description"
   );
+  const qualification__profile = document.querySelector(
+    ".about .qualification__profile"
+  );
+
+  const qualification__education = document.querySelector(
+    ".about .qualification__education"
+  );
+  const qualification__title_1 = document.querySelector(
+    ".about .qualification__title-1"
+  );
+  const qualification__subtitle_1 = document.querySelector(
+    ".about .qualification__subtitle-1"
+  );
+  const qualification__calendar_1 = document.querySelector(
+    ".about .qualification__calendar-1"
+  );
+  const qualification__title_2 = document.querySelector(
+    ".about .qualification__title-2"
+  );
+  const qualification__subtitle_2 = document.querySelector(
+    ".about .qualification__subtitle-2"
+  );
+  const qualification__calendar_2 = document.querySelector(
+    ".about .qualification__calendar-2"
+  );
+
+  const qualification__title_3 = document.querySelector(
+    ".about .qualification__title-3"
+  );
+  const qualification__subtitle_3 = document.querySelector(
+    ".about .qualification__subtitle-3"
+  );
+  const qualification__calendar_3 = document.querySelector(
+    ".about .qualification__calendar-3"
+  );
+
   const about__button = document.querySelector(".about__buttons a");
   about__title.textContent = data[attr].about.about__title;
-  about__subtitle.textContent = data[attr].about.section__subtitle;
   about__description.textContent = data[attr].about.about__description;
   about__button.textContent = data[attr].about.about__button;
+  qualification__profile.innerHTML = data[attr].about.qualification__profile;
+  qualification__education.innerHTML =
+    data[attr].about.qualification__education;
+  qualification__title_1.textContent = data[attr].about.qualification__title_1;
+  qualification__subtitle_1.textContent =
+    data[attr].about.qualification__subtitle_1;
+  qualification__calendar_1.textContent =
+    data[attr].about.qualification__calendar_1;
+  qualification__title_2.textContent = data[attr].about.qualification__title_2;
+  qualification__subtitle_2.innerHTML =
+    data[attr].about.qualification__subtitle_2;
+  qualification__calendar_2.textContent =
+    data[attr].about.qualification__calendar_2;
+  qualification__title_3.textContent = data[attr].about.qualification__title_3;
+  qualification__subtitle_3.innerHTML =
+    data[attr].about.qualification__subtitle_3;
+  qualification__calendar_3.textContent =
+    data[attr].about.qualification__calendar_3;
 
   //Skills
   const skills__title = document.querySelector(".skills .section__title");
@@ -90,22 +144,79 @@ function myFunction(event) {
   skills__title.textContent = data[attr].skills.skills__title;
   another__tools.textContent = data[attr].skills.another__tools;
 
-  //Qualification
-  const qualification__title = document.querySelector(
-    ".qualification .section__title"
+  //Services
+  const services__title = document.querySelector(".services .section__title");
+  const services__title_1 = document.querySelector(
+    ".services .services__title-1"
   );
-  const qualification__title_1 = document.querySelector(
-    ".qualification__title:nth-of-type(1)"
+  const services__title_2 = document.querySelector(
+    ".services .services__title-2"
   );
-  const qualification__subtitle_1 = document.querySelector(
-    ".qualification__title:nth-of-type(1) ~ .qualification__subtitle:nth-of-type(2)"
+  const services__title_3 = document.querySelector(
+    ".services .services__title-3"
   );
-  qualification__title.textContent =
-    data[attr].qualification.qualification__title;
-  qualification__title_1.textContent =
-    data[attr].qualification.qualification__title_1;
-  qualification__subtitle_1.textContent =
-    data[attr].qualification.qualification__subtitle_1;
+  const services__button = document.querySelectorAll(
+    ".services .services__button"
+  );
+  const services__modal_title_1 = document.querySelector(
+    ".services .services__modal-title-1"
+  );
+  const services__modal_title_2 = document.querySelector(
+    ".services .services__modal-title-2"
+  );
+  const services__modal_title_3 = document.querySelector(
+    ".services .services__modal-title-3"
+  );
+  const services__modal_1 = document.querySelector(
+    ".services .services__modal-1"
+  );
+  const services__modal_2 = document.querySelector(
+    ".services .services__modal-2"
+  );
+  const services__modal_3 = document.querySelector(
+    ".services .services__modal-3"
+  );
+  const services__modal_4 = document.querySelector(
+    ".services .services__modal-4"
+  );
+  const services__modal_5 = document.querySelector(
+    ".services .services__modal-5"
+  );
+  const services__modal_6 = document.querySelector(
+    ".services .services__modal-6"
+  );
+  const services__modal_7 = document.querySelector(
+    ".services .services__modal-7"
+  );
+  const services__modal_8 = document.querySelector(
+    ".services .services__modal-8"
+  );
+  const services__modal_9 = document.querySelector(
+    ".services .services__modal-9"
+  );
+
+  services__title.textContent = data[attr].services.services__title;
+  services__title_1.innerHTML = data[attr].services.services__title_1;
+  services__title_2.innerHTML = data[attr].services.services__title_2;
+  services__title_3.innerHTML = data[attr].services.services__title_3;
+  services__button.forEach((btn) => {
+    btn.innerHTML = data[attr].services.services__button;
+  });
+  services__modal_title_1.innerHTML =
+    data[attr].services.services__modal_title_1;
+  services__modal_title_2.innerHTML =
+    data[attr].services.services__modal_title_2;
+  services__modal_title_3.innerHTML =
+    data[attr].services.services__modal_title_3;
+  services__modal_1.innerHTML = data[attr].services.services__modal_1;
+  services__modal_2.innerHTML = data[attr].services.services__modal_2;
+  services__modal_3.innerHTML = data[attr].services.services__modal_3;
+  services__modal_4.innerHTML = data[attr].services.services__modal_4;
+  services__modal_5.innerHTML = data[attr].services.services__modal_5;
+  services__modal_6.innerHTML = data[attr].services.services__modal_6;
+  services__modal_7.innerHTML = data[attr].services.services__modal_7;
+  services__modal_8.innerHTML = data[attr].services.services__modal_8;
+  services__modal_9.innerHTML = data[attr].services.services__modal_9;
 
   //Portfolio
   const portfolio__title = document.querySelector(".portfolio .section__title");
@@ -117,16 +228,12 @@ function myFunction(event) {
 
   //Contact
   const contact__title = document.querySelector(".contact .section__title");
-  const contact__tel = document.querySelector(
-    ".contact__information:nth-of-type(1) .contact__title"
-  );
-  const contact__loc = document.querySelector(
-    ".contact__information:nth-of-type(3) .contact__title"
+  const contact__subtitle = document.querySelector(
+    ".contact .section__subtitle"
   );
   const contact__button = document.querySelector(".contact__button a");
   contact__title.textContent = data[attr].contact.contact__title;
-  contact__tel.textContent = data[attr].contact.contact__tel;
-  contact__loc.textContent = data[attr].contact.contact__loc;
+  contact__subtitle.textContent = data[attr].contact.contact__subtitle;
   contact__button.textContent = data[attr].contact.contact__button;
 
   //Footer
@@ -152,6 +259,26 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+/*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll("[data-target]"),
+  tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+
+    tabContents.forEach((tabContents) => {
+      tabContents.classList.remove("qualification__active");
+    });
+    target.classList.add("qualification__active");
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("qualification__active");
+    });
+    tab.classList.add("qualification__active");
+  });
+});
+
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName("skills__content"),
   skillsHeader = document.querySelectorAll(".skills__header");
@@ -168,6 +295,29 @@ function toggleSkills() {
 
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
+});
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+const modalViews = document.querySelectorAll(".services__modal"),
+  modalBtns = document.querySelectorAll(".services__button"),
+  modalCloses = document.querySelectorAll(".services__modal-close");
+
+let modal = function (modalClick) {
+  modalViews[modalClick].classList.add("active-modal");
+};
+
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
+
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener("click", () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove("active-modal");
+    });
+  });
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/

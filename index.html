@@ -16,13 +16,43 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>DavidEs Portfolio Website</title>
+    <title>David Escalante Sossa</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/img/logo_david.png"
+    />
+    <meta
+      name="description"
+      content="David Escalante Sossa, desarrollador software con licenciatura en Ciencias de la Computación"
+    />
+    <meta property="og:title" content="David Escalante Sossa Portfolio" />
+    <meta property="og:url" content="https://www.davidesossa.com/" />
+    <meta
+      property="og:description"
+      content="David Escalante Sossa, desarrollador software con licenciatura en Ciencias de la Computación"
+    />
+    <meta property="og:image" content="assets/img/Davidesossa-cover.png" />
+
+    <meta name="twitter:title" content="David Escalante Sossa Portfolio" />
+    <meta
+      name="twitter:description"
+      content="David Escalante Sossa, desarrollador software con licenciatura en Ciencias de la Computación"
+    />
+    <meta name="twitter:image:src" content="assets/img/Davidesossa-cover.png" />
   </head>
+
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">David Escalante</a>
+        <a href="#" class="nav__logo"
+          ><img src="assets/img/logo_david.svg" alt="David Escalante" /><span
+            >avid <br />
+            scalante</span
+          >
+          <span></span
+        ></a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -43,9 +73,9 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#education" class="nav__link">
-                <i class="uil uil-graduation-cap nav__icon"></i>
-                <span>Educación</span>
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i>
+                <span>Servicios</span>
               </a>
             </li>
             <li class="nav__item">
@@ -62,6 +92,11 @@
             <li class="nav__item nav__link" id="nav-menu-lang">
               <i class="uil uil-globe"></i>
               <div class="nav__link-lang" id="nav-menu-langItems">
+                <img
+                  class="nav_flag-1"
+                  src="assets/img/es_icon.png"
+                  alt="es_flag"
+                />
                 <a
                   href="#"
                   language="spanish"
@@ -71,6 +106,11 @@
                   es
                 </a>
                 <div></div>
+                <img
+                  class="nav_flag-2"
+                  src="assets/img/uk_icon.png"
+                  alt="uk_flag"
+                />
                 <a
                   href="#"
                   language="english"
@@ -82,12 +122,20 @@
               </div>
             </li>
           </ul>
-          <a language="spanish" class="nav__es" onclick="myFunction(event)"
-            >es</a
-          >
-          <a language="english" class="nav__en" onclick="myFunction(event)"
-            >en</a
-          >
+          <img
+            class="nav__es nav_flag-mobile"
+            src="assets/img/es_icon.png"
+            language="spanish"
+            onclick="myFunction(event)"
+            alt="es_flag"
+          />
+          <img
+            class="nav__en nav_flag-mobile"
+            src="assets/img/uk_icon.png"
+            language="english"
+            onclick="myFunction(event)"
+            alt="uk_flag"
+          />
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
 
@@ -195,28 +243,207 @@
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <h2 class="section__title">Acerca de mi</h2>
-        <span class="section__subtitle">Perfil</span>
+        <span class="section__subtitle"></span>
 
+        <div class="qualification__tabs">
+          <div
+            class="qualification__profile qualification__button button--flex"
+          >
+            <i class="uil uil-user qualification__icon"></i>
+            Perfil
+          </div>
+        </div>
         <div class="about__container container grid">
           <div class="about__data">
             <p class="about__description">
               Soy desarrollador de software con licenciatura en Ciencia de la
-              Computación enfocado pricipalmente en el desarrollo web
+              Computación enfocado principalmente en el desarrollo web
               (Full-Stack). En busca de nuevas oportunidades y altamente
               motivado para aprender rápido y mejorar mis habilidades en un
               ambiente de equipo.
             </p>
           </div>
-
-          <div class="about__buttons">
-            <a
-              download=""
-              href="assets/pdf/David_Escalante_Resume_cv.pdf"
-              class="button button--flex"
+        </div>
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
             >
-              Descargar CV<i class="uil uil-download-alt button__icon"></i>
-            </a>
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Educación
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Experiencia
+            </div>
           </div>
+
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1  ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1  ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title qualification__title-1">
+                    BACHILLER EN HUMANIDADES
+                  </h3>
+                  <span
+                    class="qualification__subtitle qualification__subtitle-1"
+                    >Colegio "Simón Rodriguez" | Sucre, Bolivia</span
+                  >
+                  <div
+                    class="qualification__calendar qualification__calendar-1"
+                  >
+                    <i class="uil uil-calendar-alt"></i>
+                    diciembre 2014
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2  ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title qualification__title-2">
+                    INGENIERÍA EN CIENCIAS DE LA COMPUTACIÓN
+                  </h3>
+                  <span
+                    class="qualification__subtitle qualification__subtitle-2"
+                    >UMRPSFXCH | Sucre, Bolivia <br />
+                    Titulación por Excelencia Académica (R.A: 81,37)</span
+                  >
+                  <div
+                    class="qualification__calendar qualification__calendar-2"
+                  >
+                    <i class="uil uil-calendar-alt"></i>
+                    Julio 2021
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title qualification__title-3">
+                    DIPLOMADO EN DOCENCIA PARA EDUCACIÓN SUPERIOR V. 13
+                  </h3>
+                  <span
+                    class="qualification__subtitle qualification__subtitle-3"
+                    >UMRPSFXCH | Sucre, Bolivia</span
+                  >
+                  <div
+                    class="qualification__calendar qualification__calendar-3"
+                  >
+                    <i class="uil uil-calendar-alt"></i>
+                    Cursando actualmente
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION CONTENT 2  ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1  ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title qualification__title-1">
+                    Programador Frontend
+                  </h3>
+                  <div
+                    class="qualification__subtitle qualification__subtitle-1"
+                  >
+                    TEKOV - SANTA CRUZ, BOLIVIA
+                  </div>
+
+                  <div
+                    class="qualification__calendar qualification__calendar-1"
+                  >
+                    <i class="uil uil-calendar-alt"></i>
+                    <span> Noviembre 2022 - Presente</span>
+                    <br />
+                    <br />
+                    <ul class="qualification__desc">
+                      <li>
+                        Sistema de Gestión de Personas con: <br />
+                        React JS | Material UI | Redux
+                      </li>
+                      <li>Trabajo en equipo con metodología SCRUM</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2  ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title qualification__title-1">
+                    Programador Frontend
+                  </h3>
+                  <div
+                    class="qualification__subtitle qualification__subtitle-1"
+                  >
+                    Consultoria de Software “CLAN BOLIVIA“ - <br />
+                    SANTA CRUZ, BOLIVIA
+                  </div>
+
+                  <div
+                    class="qualification__calendar qualification__calendar-1"
+                  >
+                    <i class="uil uil-calendar-alt"></i>
+                    <span> Diciembre 2022 - Presente </span>
+                    <br />
+                    <br />
+                    <ul class="qualification__desc">
+                      <li>
+                        Sistema de gestion (ERP) para la empresa de limpieza
+                        “JELPI” con: <br />
+                        Angular | PrimeNG
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__buttons">
+          <a
+            download=""
+            href="assets/pdf/David_Escalante_CV.pdf"
+            class="button button--flex"
+          >
+            Descargar CV<i class="uil uil-download-alt button__icon"></i>
+          </a>
         </div>
       </section>
 
@@ -273,7 +500,7 @@
           </div>
 
           <!--==================== SKILLS 2 ====================-->
-          <div class="skills__content skills__close">
+          <div class="skills__content skills__open">
             <div class="skills__header">
               <i class="uil uil-server-network skills__icon"></i>
 
@@ -319,13 +546,22 @@
               <i class="uil uil-swatchbook skills__icon"></i>
 
               <div>
-                <h1 class="skills__title other__skills">Otras Herramientas</h1>
+                <h1 class="skills__title other__skills">Otras Habilidades</h1>
               </div>
 
               <i class="uil uil-angle-down skills__arrow"></i>
             </div>
 
             <div class="skills__list">
+              <div class="skills__data">
+                <div class="skills__data-img">
+                  <img
+                    style="max-width: 150%; max-height: 150%; margin: 0 -0.8rem"
+                    src="assets/img/android.png"
+                    alt=""
+                  />
+                </div>
+              </div>
               <div class="skills__data">
                 <div class="skills__data-img">
                   <img src="assets/img/photoshop.png" alt="" />
@@ -346,37 +582,146 @@
         </div>
       </section>
 
-      <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section" id="education">
-        <h2 class="section__title">Educación</h2>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Servicios</h2>
         <span class="section__subtitle"></span>
 
-        <div class="qualification__container container">
-          <div class="qualification__tabs">
-            <div class="qualification__button">
-              <i class="uil uil-graduation-cap qualification__icon"></i>
+        <div class="services__container container grid">
+          <!--==================== SERVICES 1 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-web-grid services__icon"></i>
+              <h3 class="services__title services__title-1">
+                Diseño <br />
+                Web
+              </h3>
+            </div>
+
+            <span
+              class="button--flex button--small button--link services__button"
+            >
+              Ver Más
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title services__modal-title-1">
+                  Diseño Web
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service services__modal-1">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Sitios web institucionales, Portafolios, blogs, landing
+                      pages, catálogos de productos, etc.
+                    </p>
+                  </li>
+                  <li class="services__modal-service services__modal-2">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Desarrollado con la última tecnología y responsive design
+                      que se adaptan a todo tipo de dispositivos.
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="qualification__sections">
-            <!--==================== QUALIFICATION CONTENT 1 ====================-->
-            <div class="qualification__content qualification__active">
-              <!--==================== QUALIFICATION 1 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">
-                    INGENIERÍA EN CIENCIAS DE LA COMPUTACIÓN
-                  </h3>
-                  <span class="qualification__subtitle">USFXCH - Bolivia</span>
-                  <br />
-                  <span class="qualification__subtitle"
-                    >Graduación con Excelencia Académica</span
-                  >
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2015 - 2021
-                  </div>
-                </div>
+          <!--==================== SERVICES 2 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-arrow services__icon"></i>
+              <h3 class="services__title services__title-2">
+                Aplicaciones <br />
+                Web +
+              </h3>
+            </div>
+
+            <span
+              class="button--flex button--small button--link services__button"
+            >
+              Ver Más
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title services__modal-title-2">
+                  Aplicaciones Web +
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service services__modal-3">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Sistemas CRM, ERP</p>
+                  </li>
+                  <li class="services__modal-service services__modal-4">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Tiendas online (Ecommerce).</p>
+                  </li>
+                  <li class="services__modal-service services__modal-5">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Aplicaciones móviles para Android.</p>
+                  </li>
+                  <li class="services__modal-service services__modal-6">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Programo lo que tengas en mente.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SERVICES 3 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-cog services__icon"></i>
+              <h3 class="services__title services__title-3">
+                Soporte <br />
+                Técnico
+              </h3>
+            </div>
+
+            <span
+              class="button--flex button--small button--link services__button"
+            >
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title services__modal-title-3">
+                  Soporte Técnico
+                </h4>
+                <i class="uil uil-times services__modal-close"></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service services__modal-7">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Mantenimiento y actualización de sitios web.</p>
+                  </li>
+                  <li class="services__modal-service services__modal-8">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Implementación de WordPress. Instalación y configuración,
+                      carga de datos. Capacitación.
+                    </p>
+                  </li>
+                  <li class="services__modal-service services__modal-9">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>
+                      Si tienes alguna duda o necesitas contratar un hosting
+                      para tu web y no sabes cómo hacerlo acude a mi.
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -399,7 +744,7 @@
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Shopping App</h3>
+                <h3 class="portfolio__title">Tienda Online</h3>
                 <p class="portfolio__description">
                   Node.js | Express | Moongose | Heroku | MongoDB Atlas |
                   Sendgrid API
@@ -434,7 +779,7 @@
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">CMS Post</h3>
+                <h3 class="portfolio__title">Blog + CMS</h3>
                 <p class="portfolio__description">
                   Laravel | MySQL | jQuery | Bootstrap
                 </p>
@@ -469,7 +814,7 @@
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">
-                  Internship Attendance Management
+                  Sistema de Control de Asistencia
                 </h3>
                 <p class="portfolio__description">
                   Laravel | Vue | MySQL | Bootstrap
@@ -498,19 +843,20 @@
             <!--==================== PORTFOLIO 4 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/fitness-tracker.png"
+                src="assets/img/hospital-admin.png"
                 alt=""
                 class="portfolio__img"
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Fitness Tracker</h3>
+                <h3 class="portfolio__title">Hospital Admin</h3>
                 <p class="portfolio__description">
-                  Angular | NgRx | Angular Material | Firebase
+                  Angular | Node.Js | Express | Mongoose | MongoDB Atlas |
+                  Heroku
                 </p>
                 <div class="portfolio__buttons">
                   <a
-                    href="https://fitnesstracker-app.davidesossa.com/"
+                    href="https://hospital-admin.davidesossa.com/"
                     class="button button--flex button--small portfolio__button"
                     target="_blank"
                   >
@@ -518,7 +864,7 @@
                     <i class="uil uil-arrow-right button__icon"></i>
                   </a>
                   <a
-                    href="https://github.com/dav24github/Fitness-Tracker.git"
+                    href="https://github.com/dav24github/adminpro"
                     class="portfolio__code"
                     target="_blank"
                   >
@@ -538,7 +884,7 @@
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Post App</h3>
+                <h3 class="portfolio__title">Blog App</h3>
                 <p class="portfolio__description">
                   Angular | Node.js | Express | Moongose | Angular Material |
                   MongoDB Atlas | Heroku | Cloudinary API
@@ -567,13 +913,47 @@
             <!--==================== PORTFOLIO 6 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
+                src="assets/img/fitness-tracker.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Fitness App</h3>
+                <p class="portfolio__description">
+                  Angular | NgRx | Angular Material | Firebase
+                </p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://fitnesstracker-app.davidesossa.com/"
+                    class="button button--flex button--small portfolio__button"
+                    target="_blank"
+                  >
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                  <a
+                    href="https://github.com/dav24github/Fitness-Tracker.git"
+                    class="portfolio__code"
+                    target="_blank"
+                  >
+                    <i class="uil uil-code-branch portfolio__icon"></i>
+                    <span class="portfolio__code-description">Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 7 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
                 src="assets/img/recipe-app.png"
                 alt=""
                 class="portfolio__img"
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Recipe App</h3>
+                <h3 class="portfolio__title">Recetario App</h3>
                 <p class="portfolio__description">Angular | Firebase</p>
                 <div class="portfolio__buttons">
                   <a
@@ -596,7 +976,31 @@
               </div>
             </div>
 
-            <!--==================== PORTFOLIO 7 ====================-->
+            <!--==================== PORTFOLIO 8 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/rossel-preview.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Catálogo Web</h3>
+                <p class="portfolio__description">HTML | CSS | Javascript</p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="http://testing.davidesossa.com/"
+                    class="button button--flex button--small portfolio__button"
+                    target="_blank"
+                  >
+                    Ver Sitio
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 9 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
                 src="assets/img/omnifood.png"
@@ -605,7 +1009,7 @@
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Omnifood</h3>
+                <h3 class="portfolio__title">Sitio web - One Page</h3>
                 <p class="portfolio__description">HTML | CSS | Javascript</p>
                 <div class="portfolio__buttons">
                   <a
@@ -628,20 +1032,20 @@
               </div>
             </div>
 
-            <!--==================== PORTFOLIO 8 ====================-->
+            <!--==================== PORTFOLIO 10 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/buger-builder-app.png"
+                src="assets/img/craftsman.png"
                 alt=""
                 class="portfolio__img"
               />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Burger Builder App</h3>
-                <p class="portfolio__description">React | Firebase</p>
+                <h3 class="portfolio__title">Portfolio - Diseñador Gráfico</h3>
+                <p class="portfolio__description">HTML | CSS | Javascript</p>
                 <div class="portfolio__buttons">
                   <a
-                    href="http://burger-builder-app.davidesossa.com/"
+                    href="https://digital-craftman-porfolio.davidesossa.com/"
                     class="button button--flex button--small portfolio__button"
                     target="_blank"
                   >
@@ -649,7 +1053,99 @@
                     <i class="uil uil-arrow-right button__icon"></i>
                   </a>
                   <a
-                    href="https://github.com/dav24github/Burger-Builder_React.git"
+                    href="https://github.com/dav24github/jacob-bleech"
+                    class="portfolio__code"
+                    target="_blank"
+                  >
+                    <i class="uil uil-code-branch portfolio__icon"></i>
+                    <span class="portfolio__code-description">Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 11 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/design-studio.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Sitio Web - Design Studio</h3>
+                <p class="portfolio__description">HTML | CSS | Javascript</p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://design-studio-portfolio.davidesossa.com/"
+                    class="button button--flex button--small portfolio__button"
+                    target="_blank"
+                  >
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                  <a
+                    href="https://github.com/dav24github/thirdweb-clone"
+                    class="portfolio__code"
+                    target="_blank"
+                  >
+                    <i class="uil uil-code-branch portfolio__icon"></i>
+                    <span class="portfolio__code-description">Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 12 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/7min.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">7 Min Workout</h3>
+                <p class="portfolio__description">Kotlin | Android Studio</p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://github.com/dav24github/7MinWorkout"
+                    class="portfolio__code"
+                    target="_blank"
+                  >
+                    <i class="uil uil-code-branch portfolio__icon"></i>
+                    <span class="portfolio__code-description">Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 13 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/happy.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Happy Places</h3>
+                <p class="portfolio__description">Kotlin | Android Studio</p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://github.com/dav24github/Happy-Place"
+                    class="portfolio__code"
+                    target="_blank"
+                  >
+                    <i class="uil uil-code-branch portfolio__icon"></i>
+                    <span class="portfolio__code-description">Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 14 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/trello.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Trello Clone</h3>
+                <p class="portfolio__description">Kotlin | Android Studio</p>
+                <div class="portfolio__buttons">
+                  <a
+                    href="https://github.com/dav24github/Trello-clone-app"
                     class="portfolio__code"
                     target="_blank"
                   >
@@ -674,6 +1170,9 @@
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">Contacto</h2>
+        <span class="section__subtitle"
+          >¿Tienes un proyecto en mente? Házmelo saber</span
+        >
 
         <div class="contact__container">
           <div class="contact__informations">
@@ -693,7 +1192,7 @@
 
               <div>
                 <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">davidthbsossa@email.com</span>
+                <span class="contact__subtitle">davidthbsossa@gmail.com</span>
               </div>
             </div>
 
